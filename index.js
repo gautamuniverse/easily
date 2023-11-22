@@ -37,8 +37,8 @@ server.set('views', path.join(path.resolve(), 'src', 'views'));
 //Make the public folder available to the client
 server.use(express.static('public'));
 
-//Make the views available for rendering
-server.use(express.static('src/views'));
+// //Make the views available for rendering
+// server.use(express.static('src/views'));
 
 //Using the cookie parser to enable cookies
 server.use(cookieParser());
