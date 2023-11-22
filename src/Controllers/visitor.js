@@ -24,7 +24,7 @@ export default class Visitor {
     const job = Jobs.getById(getJobId);
     // Check if the job is found
     if (job) {
-      res.render("jobDetails", {
+      res.render("jobdetails", {
         job: job,
         email: req.session.email,
         name: req.session.name,
