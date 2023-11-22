@@ -34,8 +34,11 @@ const user = new User();
 //Mention the folder where views are present.
 server.set('views', path.join(path.resolve(), 'src', 'views'));
 
-//Make the public folder available to the client
-server.use(express.static('public'));
+// Make both public and views folders available to the client
+server.use(express.static(path.join(path.resolve(), 'public')));
+
+// //Make the public folder available to the client
+// server.use(express.static('public'));
 
 //Make the views available for rendering
 // server.use(express.static('src/views'));
