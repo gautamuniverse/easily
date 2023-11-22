@@ -7,7 +7,7 @@ import multer from "multer";
 //Below is the storage configuration that is accepted as a parameter by the multer instance.
 const storageConfig = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, "public/resume/"); //Here null means no errors. and second parameter is for the storage location where we want to store the client uploaded files.
+    cb(null, "/resume/"); //Here null means no errors. and second parameter is for the storage location where we want to store the client uploaded files.
   },
   filename: (req, file, cb) => {
     const fileName = Date.now() + "-" + file.originalname;
